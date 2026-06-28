@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "世界杯诗圆专享",
+    "slug": "worldcup-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.worldcup.news"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1a1a2e"
+      },
+      "package": "com.worldcup.news"
+    },
+    "plugins": [
+      "./plugins/withCleartext",
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "kotlinVersion": "1.9.25"
+          }
+        }
+      ],
+      "expo-asset",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "b46fd643-60eb-485e-9733-1b2eba92bc0a"
+      }
+    }
+  }
+}
